@@ -16,7 +16,8 @@ import java.util.function.Function;
 
 @Service
 public class JWTService {
-    private static String SECRET_KEY = "shdylvh2wNW6JpSW8EjdHhzzXabkFymh39mK4rznScgqXnN9BH2DgkaJfWj5Ko9";
+    @Value("${keys.secretKey}")
+    private static String SECRET_KEY;
     private static final long THOUSAND = 1000L;
     private static final long SIXTY = 60L;
     private static final long TWENTY_FOUR = 24L;
