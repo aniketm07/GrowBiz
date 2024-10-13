@@ -60,9 +60,9 @@ $ git clone https://git.cs.dal.ca/courses/2023-fall/csci-5308/Group02.git
 <hr />
 
 ## Building and Locally Running GrowBiz
-
-1. In the backend directory, run `./mvnw install`.
-2. Create .env file in the frontend directory and put the following secrets in the file (Update the secrets as per your instance)
+1. Replace the Stripe Keys, and secretKey([Generate one from here](https://generate-random.org/encryption-key-generator?count=1&bytes=32&cipher=aes-256-cbc&string=&password=)) in `backend/src/main/resources/application.yaml`
+2. In the backend directory, run `./mvnw install`.
+3. Create .env file in the frontend directory and put the following secrets in the file (Update the secrets as per your instance)
     ```
     NEXTAUTH_SECRET="password"
     NEXT_PUBLIC_SERVER_ADDRESS="http://backend:9002"
@@ -80,11 +80,11 @@ $ git clone https://git.cs.dal.ca/courses/2023-fall/csci-5308/Group02.git
     NEXT_PUBLIC_FIREBASE_UNIVERSE_DOMAIN=googleapis.com
     NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket_name
     ```
-3. After successful compilation and build, go to the root directory of the repository and run `docker-compose build`.
-4. After docker images are built successfully, run `docker-compose up`.
-5. Application can be accessed at `http://localhost:3000`.
-6. `Ctrl + c` to stop the containers.
-7. Please run `docker-compose down` after stopping the containers.
+4. After successful compilation and build, go to the root directory of the repository and run `docker-compose build`.
+5. After docker images are built successfully, run `docker-compose up`.
+6. Application can be accessed at `http://localhost:3000`.
+7. `Ctrl + c` to stop the containers.
+8. Please run `docker-compose down` after stopping the containers.
 
 <hr />
 
