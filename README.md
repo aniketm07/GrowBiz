@@ -66,6 +66,19 @@ $ git clone https://git.cs.dal.ca/courses/2023-fall/csci-5308/Group02.git
     ```
     NEXTAUTH_SECRET="password"
     NEXT_PUBLIC_SERVER_ADDRESS="http://backend:9002"
+    # Firebase Configuration
+    NEXT_PUBLIC_FIREBASE_TYPE=service_account
+    NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+    NEXT_PUBLIC_FIREBASE_PRIVATE_KEY_ID=your_private_key_id
+    NEXT_PUBLIC_FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nYOUR_PRIVATE_KEY_CONTENT_HERE\n-----END PRIVATE KEY-----\n"
+    NEXT_PUBLIC_FIREBASE_CLIENT_EMAIL=your_firebase_client_email
+    NEXT_PUBLIC_FIREBASE_CLIENT_ID=your_client_id
+    NEXT_PUBLIC_FIREBASE_AUTH_URI=https://accounts.google.com/o/oauth2/auth
+    NEXT_PUBLIC_FIREBASE_TOKEN_URI=https://oauth2.googleapis.com/token
+    NEXT_PUBLIC_FIREBASE_AUTH_PROVIDER_CERT_URL=https://www.googleapis.com/oauth2/v1/certs
+    NEXT_PUBLIC_FIREBASE_CLIENT_CERT_URL=https://www.googleapis.com/robot/v1/metadata/x509/your_firebase_client_email
+    NEXT_PUBLIC_FIREBASE_UNIVERSE_DOMAIN=googleapis.com
+    NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket_name
     ```
 3. After successful compilation and build, go to the root directory of the repository and run `docker-compose build`.
 4. After docker images are built successfully, run `docker-compose up`.
